@@ -1,0 +1,231 @@
+/*
+Exercício: Aula 11 
+Aluno: Gabriel Lourenço
+*/
+
+/*Corpo e Fonte*/
+
+body{
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	line-height: 1.5;
+	color: #444;
+	font-size: 62.5%;
+}
+
+
+
+a{
+	text-decoration: none;
+	font-size: 1.6em; /*16px Antes*/
+	color: #00ccff;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+
+
+/*Site*/
+
+.container{
+	max-width: 1128px;
+	margin: 0 auto;
+}
+
+img,
+figure,
+video,
+embed {
+	max-width: 100%;
+}
+
+header{
+	width: 100%;
+	height: 48px;
+	margin-top: 3.6em; /*36px Antes*/
+	margin-bottom: 3.6em; /*36px Antes*/
+}
+
+.logo{
+	float: left;
+	width: 20.74%; /*Objeto= 234px DIVIDIDO pelo Contexto= 1128px VEZES 100= 20,74%*/
+}
+
+nav{
+	float: right;
+	width: 74.47%; /*Objeto= 840px DIVIDIDO pelo Contexto= 1128px VEZES 100= 74,46%*/
+}
+
+nav ul{
+	float: right;
+}
+
+nav li{
+	font-size: 1.2em; /*12px Antes*/
+	margin-left: 2.0em; /*20px Antes*/
+	margin-top: 1.0em; /*10px Antes*/
+	display: inline-block;
+}
+
+nav li a{
+	color: #999;
+}
+
+.banner{
+	background: url('imagens/banner.jpg');
+	height: 450px;
+	margin-bottom: 4.8em; /*48px Antes*/
+	position: relative;
+}
+
+.caixa{
+	position: absolute;
+	top: 4.8em;
+	background: rgba(0,0,0,0.6); 
+	width: 42.55%;
+	padding:2.4em 1.4em 2.4em 4.0em;/*24px 14px 24px 40px Antes*/
+}
+
+h1{
+	font-size: 4.0em;/*40px Antes*/
+	color: #fff;
+	margin-bottom: 0em;/*0px Antes*/
+	margin-top: 0em;/*0px Antes*/
+}
+
+.caixa p{
+	font-size: 1.8em;/*18px Antes*/
+	color: #fff;
+}
+
+
+
+
+/*Section */
+
+.coluna{
+	width: 23.40%;
+	margin-right: 2.4em;/*24px Antes*/
+	float: left;
+}
+
+.coluna:last-child{
+	margin-right: 0em;/*0px Antes*/
+}
+
+h2{
+	font-size: 2.4em;/*0px Antes*/
+}
+
+p{
+	font-size: 1.6em;/*16px Antes*/
+	text-align: justify;
+}
+
+footer{
+	width: 100%;
+	float: left;
+	margin-top: 2.4em;/*24px Antes*/
+	margin-bottom: 2.4em;/*24px Antes*/
+}
+
+p.footer{
+	font-size: 1.0em;/*10px Antes*/
+	margin-bottom: 0em;/*0px Antes*/
+}
+
+/*Media Queries*/
+
+@media screen and(max-width:1128px){
+    .container{
+        padding: 0 2.4em 0 2.4em;
+    }
+}
+    
+@media screen and (max-width: 768px){
+    .caixa{
+        width: 65%;
+    }
+    .coluna{
+        width: 48%;
+    }
+    .conluna:nth-child(even){
+        margin-right: 0;
+    }
+    .marca{
+        width:22%;
+        margin-top: 1.2em;
+    }
+}
+
+@media screen and (max-width:718px){
+    .banner{
+       position: relative;
+       float:left; 
+       margin:0;
+       height: 150px;
+    }
+    .caixa{
+        position: relative;
+        display: block;
+        background: #000;
+        width: 100%;
+        float: left;
+        margin-top: 100px;
+    }
+    h1{
+        font-size: 2.5em;
+    }
+    nav{
+        width: 70%;
+    }
+    section{
+        margin-top: 450px;
+    }
+}
+
+@media screen and (max-width: 640px){
+    nav{
+        width: 100%;
+    }
+    nav ul{
+        float: left;
+        font-size: 0.8em;
+    }
+    nav li:first-child{
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 520px){
+	.coluna{
+		width: 100%;
+		margin-right:0;
+	}
+    .banner{
+		height: 120px;
+	}
+	.caixa{
+		position: relative;
+		display: block;
+		width: 100%;
+		background: #000;
+		float: left;
+		margin-top: 80px;
+	}
+}
+
+.clearfix:before,
+.clearfix:after {
+	content:" ";
+	display:table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.clearfix {
+	*zoom: 1;
+}
