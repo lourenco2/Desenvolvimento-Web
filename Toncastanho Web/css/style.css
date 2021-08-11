@@ -1,0 +1,158 @@
+
+/*Qualquer dúvida consulte :::http://www.w3.org/community/webed/wiki/CSS/Properties:::
+*/
+
+
+body {
+font-family: 'Architects Daughter', cursive;
+/*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+line-height: 1.5;
+color: #444;
+font-size: 100%;
+}
+
+
+
+/*
+Todo 'a' vem por default sublinhado, para mudar isso deve-se usar as seguintes propriedades:
+text-decoration: none ==> retira o sublinhado;
+text-decoration: underline ==> coloca um sublinhado;
+text-decoration: overline ==> coloca um sobrelinhado;
+text-decoration: underline overline ==> coloca sobre e sublinhado juntos;
+text-decoration: line-through ==> coloca uma linha em cima do texto.
+*/
+a {
+color: #00ccff;
+font-size: 24px;
+text-decoration: none;
+}
+
+/*
+Como estilizar o comportamento do mouse
+a:link estiliza o estado UP (corresponde a situação inicial do link, isto é, o aspecto do link quando a página é carregada no browser do usuário);
+a:visited estiliza o estado VISITED (é o aspecto que o link assume quando o usuário passa o ponteiro do mouse sobre o link);
+a:hover estiliza o estado OVER (é o aspecto do link depois que foi visitado pelo usuário);
+a:active estiliza o estado link ativo (é o aspecto do link ativo, isto é, aquele que foi clicado pelo usuário.);
+*/
+
+a:hover{
+text-decoration: underline;
+text-decoration-color: #B45F04;
+
+}
+
+
+/* Estilos principais */
+
+.container{
+	max-width: 1128px;
+	margin: 0 auto;	
+}
+img,
+figure,
+video,
+embed{
+	max-width: 100%;
+}
+header{
+	width: 100%;
+	height: 48px;
+	margin-top: 36px;
+	margin-bottom: 36px;
+}
+
+.marca{
+	margin left:0px;
+	width: 350px;
+}
+nav{
+	float: right;
+	width: 640px;
+}
+nav ul{
+	float: right;
+}
+
+nav li{
+	font-size: 10px;
+	display: inline-block;
+	margin-left: 0px;
+	margin-top: 20px;
+}
+
+nav li a{
+	color: #999;
+}
+.banner{
+	background: url('../img/moveis.jpg');
+	height: 550px;
+	width: 1128px; 
+	margin top: 10px;
+	margin-bottom: 48px;
+	margin-left: 0px;
+	margin-right: 20px;
+	margin-bottom: 48px;
+	position: relative;
+}
+.box{
+	position: absolute;
+	top: 48px;
+	background: rgba(0,0,0,0.6); /*The last 0.6 defines the transparency of the text box here. */
+	width: 480px;
+	padding: 14px 14px 14px 14px; /*putting in line this definition the order is "top, right, botton, left"*/
+	display: center;
+	text-align: justify;
+}
+
+
+
+/* 
+O Position não serve para diagramar a estrutura de layouts. Para isso, você utiliza a propriedade float do css. O Position vai servir para fazer coisas mais simples.
+#fixed irá fixar a posição do elemento na coordenada que você definir
+#relative posiciona o elemento em relação a si mesmo.
+#absolute se utiliza do ponto superior esquerdo de outros elementos. Estes elementos são os parentes dele do elemento com position absolute. Mais especificamente o pai.
+*/
+h1{
+	font-size: 40px;
+	color:#FFF;
+	font-weight: 200;
+	margin-top: 0
+	margin-bottom:0;
+}
+.destaque{
+	font-size: 18px;
+	color:#FFF;
+	font-weight: 200;
+}
+.column{
+	width: 206.4px;
+	float: left;
+	margin-right: 24px;
+
+}
+.column:last-child{
+	margin-right: 0;
+}
+.column p{
+	text-align: justify;
+	font-size: 16px;
+}
+.column_photo{
+	width: 206.4px;
+	height: 180px;
+}
+
+h2{
+	font-size: 24px;
+
+}
+
+footer{
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	float: left;
+	width: 100%;
+	margin-top:50px;
+	margin-bottom: 10px;
+	font-size: 20px;
+	margin-bottom: 0;
+}

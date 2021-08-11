@@ -1,0 +1,109 @@
+
+/*PÁGINA INTEIRA*/
+/*cores
+#A8824E - Elemento
+#2C211F - Menu
+#E1DBCB - Fonte
+*/
+body {
+font-family: "Architects Daughter", cursive;
+line-height: 1.5;
+font-size: 100%;
+margin: 0;
+}
+
+/*CABEÇALHO*/
+
+header{
+	border-top: solid 20px #A8824E	;
+	width: 100%;
+	height: 70px;
+	padding: 5px;
+	display: flex;
+}
+
+.img1{
+	width: 400px;
+	height: 70px;
+}
+
+/*MENU PRINCIPAL*/
+
+.menu{
+	border:solid 2px #E1DBCB;
+	border-left: 0px;
+	border-right: 0px;
+	height: 50px;
+	align-items: center;
+}
+
+ul{
+	display: flex;
+	position: absolute;
+	left: 25%;
+	top: 50px;
+	text-decoration: none;
+	list-style: none;	
+	color: #2C211F;
+	font-size: 15px;
+
+}
+
+li{
+	padding: 50px;
+	font-weight: bold;
+	color: 
+}
+
+select{
+	border:none;
+}
+
+/*DESENVOLVIMENTO*/
+
+.column{
+	display: inline-block;
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	border-bottom: solid 2px #E1DBCB;
+}
+
+.imgcolumn{
+	width: 250px;
+}
+
+h2{
+	color: #A8824E;
+
+}
+
+p{
+	color:#2C211F;
+	text-align: center;
+	margin-left: 200px;
+	margin-right: 200px;
+	font-size: 20px;
+}
+
+texto{
+	padding-top: 10%;
+	padding-left: 80px;
+}
+
+
+footer{
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: white;
+	float: left;
+	width: 100%;
+	font-size: 20px;
+	margin-bottom: 0;
+	background-color: #A8824E;
+	text-align: center;
+}
+
+.footer{
+	color: white;
+	font-size: 15px;
+}
